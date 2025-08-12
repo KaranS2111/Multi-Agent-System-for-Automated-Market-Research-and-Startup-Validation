@@ -1,8 +1,8 @@
 import streamlit as st
 from crew import run_crew
 
-st.set_page_config(page_title="Startup Helper", page_icon="🚀")
-st.title("🚀 Startup Evaluator with CrewAI")
+st.set_page_config(page_title="Automated Market Research and Startup Validation", page_icon="🚀")
+st.title("Market Research Automation with CrewAI")
 
 idea = st.text_area("Describe your startup idea")
 
@@ -23,3 +23,4 @@ if st.button("Generate Insights") and idea:
             st.markdown(task.raw, unsafe_allow_html=True)
     else:
         st.warning("No task output found.")
+
